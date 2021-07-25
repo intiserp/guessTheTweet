@@ -42,8 +42,8 @@ def main ():
     user2Tweets = get_tweet_texts(user2FilteredTweetObjects)
 
     # display scraping stats -- uncomment if you want to view the stats
-    # display_scraping_stats(user1, user1TweetObjects, user1FilteredTweetObjects)
-    # display_scraping_stats(user2, user2TweetObjects, user2FilteredTweetObjects)
+    display_scraping_stats(user1, user1TweetObjects, user1FilteredTweetObjects)
+    display_scraping_stats(user2, user2TweetObjects, user2FilteredTweetObjects)
 
     # play the game
     print("\nDone. Let's start!")
@@ -74,7 +74,7 @@ def play_game(user1Tweets, user2Tweets):
                 print("Incorrect.")
         else:
             if (userGuess.lower() in ['elon musk', 'elonmusk', 'elon', 'musk']):
-                print("Correct! X Æ A-Xii would be proud.")
+                print("Correct! X Æ A-Xii agreees.")
                 correctPoints += 1
             else:
                 print("Incorrect.")
